@@ -6,6 +6,8 @@ public class PruebaCalculadora {
     public static void main(String[] args) {
         
         int opcion;
+        Calculadora Cal;
+        Cal = new Calculadora();
         
         Scanner entrada = new Scanner(System.in);
         
@@ -17,7 +19,7 @@ public class PruebaCalculadora {
         opcion=entrada.nextInt();
         //Llama al metodo sumar
         if(opcion==1){
-            
+            Cal.
         }
         //Llama al metodo restar
         if(opcion==2){
