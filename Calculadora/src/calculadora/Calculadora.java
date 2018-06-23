@@ -1,33 +1,54 @@
 package calculadora;
 
 public class Calculadora {
-     double x,y;
-    public calculadora(double x, double y){
-        this.x=x;
-        this.y=y;
-        
-        double sum=x+y;
-        double res=x-y;
-        double multi=x*y;
-        double div=x/y;
+    private double x,y;
+    
+    public Calculadora(){
+        x = 0;
+        y = 0;
+    }
+    public Calculadora(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+    
+    public void setX(double x){
+        this.x = x;
+    }
+    
+    public void setY(double y){
+        this.y = y;
+    }
+    
+    public double getX(){
+        return x;
+    } 
+    
+    public double getY(){
+        return y;
     }
     
     public double sumar(){
+        double sum = 0;
+        sum = getX() + getY();
         return sum;
-    }
+    }   
+    
     public double restar(){
+        double res = 0;
+        res = getX() - getY();
         return res;
     }
+    
     public double multiplicar(){
-        /*int x, y, result;
-        x = 5;
-        y = 6;
-        result = x* y;
-        System.out.println("Resultado = " + result");
-       */
+        double multi = 0;
+        multi = getX() * getY();      
         return multi;
     }
+    
     public double dividir(){
+        double div = 0;
+        div = getX() / getY();            
         return div;
     }
 }
